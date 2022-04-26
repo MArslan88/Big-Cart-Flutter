@@ -1,5 +1,6 @@
 import 'package:big_cart/constants/asset_constants.dart';
 import 'package:big_cart/screens/login/login_form.dart';
+import 'package:big_cart/shared/styles.dart';
 import 'package:flutter/material.dart';
 
 class LoginActivity extends StatelessWidget {

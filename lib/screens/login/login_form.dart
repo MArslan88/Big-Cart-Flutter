@@ -1,4 +1,5 @@
 import 'package:big_cart/widgets/email_authentication_field.dart';
+import 'package:big_cart/widgets/password_authentication_field.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,23 +11,27 @@ class LoginForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: EdgeInsets.only(left: 16, top: 30),
-            child: Text("Welcome back !", style: heading5),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 16, top: 2),
-            child: Text(
-              "Sign in to your account",
-              style: heading3,
+      child: Container(
+        color: appGreyLight,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 16, top: 30),
+              child: Text("Welcome back !", style: heading5),
             ),
-          ),
-          SizedBox(height: 21),
-          const EmailAuthenticationField(placeholder: "Email Address"),
-        ],
+            Padding(
+              padding: EdgeInsets.only(left: 16, top: 2),
+              child: Text(
+                "Sign in to your account",
+                style: heading3,
+              ),
+            ),
+            SizedBox(height: 21),
+            const EmailAuthenticationField(placeholder: "Email Address"),
+            const PasswordAuthenticationField(placeholder: "Password"),
+          ],
+        ),
       ),
     );
   }
