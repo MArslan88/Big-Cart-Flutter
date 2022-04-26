@@ -1,3 +1,5 @@
+import 'package:big_cart/widgets/email_authentication_field.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../shared/styles.dart';
@@ -22,7 +24,8 @@ class LoginForm extends StatelessWidget {
               style: heading3,
             ),
           ),
-          SizedBox(height: 26),
+          SizedBox(height: 21),
+          const EmailAuthenticationField(placeholder: "Email Address"),
         ],
       ),
     );
