@@ -12,7 +12,7 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Container(
-        color: appGreyLight,
+        color: Color(0xF4F5F9),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -24,7 +24,7 @@ class LoginForm extends StatelessWidget {
               padding: EdgeInsets.only(left: 16, top: 2),
               child: Text(
                 "Sign in to your account",
-                style: heading3,
+                style: paragraph2,
               ),
             ),
             SizedBox(height: 21),

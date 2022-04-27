@@ -18,7 +18,7 @@ class EmailAuthenticationField extends StatelessWidget {
         borderRadius: BorderRadius.circular(5),
       ),
       child: TextField(
-        style: const TextStyle(color: Colors.white, fontSize: 15),
+        style: const TextStyle(color: Colors.black, fontSize: 15),
         decoration: InputDecoration(
             icon: const Icon(
               CupertinoIcons.mail,
