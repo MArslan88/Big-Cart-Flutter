@@ -2,7 +2,9 @@ import 'package:big_cart/shared/styles.dart';
 import 'package:flutter/material.dart';
 
 class AppMainButton extends StatelessWidget {
-  const AppMainButton({Key? key}) : super(key: key);
+  final String placeholder;
+
+  const AppMainButton({required this.placeholder});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class AppMainButton extends StatelessWidget {
               blurRadius: 9),
         ],
       ),
-      child: Text("Login", style: heading7),
+      child: Text(placeholder, style: heading7),
     );
   }
 }
