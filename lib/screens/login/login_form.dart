@@ -51,7 +51,7 @@ class LoginForm extends StatelessWidget {
             ),
             SizedBox(height: 17),
             // App Main Button
-            AppMainButton(),
+            AppMainButton(placeholder: "Login"),
             SizedBox(height: 20),
             // Footer Text
             Align(
