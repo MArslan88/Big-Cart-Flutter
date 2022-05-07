@@ -30,7 +30,9 @@ class LoginForm extends StatelessWidget {
               ),
             ),
             SizedBox(height: 21),
+            //Email Field
             const EmailAuthenticationField(placeholder: "Email Address"),
+            //Password Field
             const PasswordAuthenticationField(placeholder: "Password"),
             SizedBox(height: 21),
             Padding(
@@ -48,7 +50,25 @@ class LoginForm extends StatelessWidget {
               ),
             ),
             SizedBox(height: 17),
-            AppMainButton()
+            // App Main Button
+            AppMainButton(),
+            SizedBox(height: 20),
+            // Footer Text
+            Align(
+              alignment: Alignment.topCenter,
+              child: RichText(
+                  text: TextSpan(
+                text: "Don't have an account?",
+                style: paragraph3,
+                children: <TextSpan>[
+                  TextSpan(
+                    text: "Sign up",
+                    style: paragraph1.copyWith(color: Colors.black),
+                  )
+                ],
+              )),
+            ),
+            SizedBox(height: 45)
           ],
         ),
       ),

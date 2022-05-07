@@ -11,7 +11,10 @@ class LoginActivity extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          children: [Image.asset(AssetConstants.loginBackground), LoginForm()],
+          children: [
+            Image.asset(AssetConstants.loginBackground),
+            LoginForm(),
+          ],
         ),
       ),
     );

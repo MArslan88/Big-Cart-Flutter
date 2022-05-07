@@ -1,4 +1,5 @@
 import 'package:big_cart/constants/asset_constants.dart';
+import 'package:big_cart/screens/login/hook_example.dart';
 import 'package:big_cart/screens/login/login_activity.dart';
 import 'package:big_cart/screens/login/login_form.dart';
 import 'package:big_cart/screens/splash/background.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: LoginForm(),
+        body: LoginActivity(),
       ),
     );
   }
