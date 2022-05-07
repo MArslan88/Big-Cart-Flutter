@@ -3,10 +3,10 @@ import 'package:big_cart/shared/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class EmailAuthenticationField extends StatelessWidget {
+class PhoneAuthenticationField extends StatelessWidget {
   final String placeholder;
 
-  const EmailAuthenticationField({required this.placeholder});
+  const PhoneAuthenticationField({required this.placeholder});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class EmailAuthenticationField extends StatelessWidget {
         style: const TextStyle(color: Colors.black, fontSize: 15),
         decoration: InputDecoration(
             icon: const Icon(
-              CupertinoIcons.mail,
+              CupertinoIcons.phone,
               color: appGreyColor,
             ),
             hintText: placeholder,
