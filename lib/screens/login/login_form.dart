@@ -1,3 +1,4 @@
+import 'package:big_cart/screens/signup/logout_activity.dart';
 import 'package:big_cart/widgets/app_main_button.dart';
 import 'package:big_cart/widgets/email_authentication_field.dart';
 import 'package:big_cart/widgets/password_authentication_field.dart';
@@ -56,17 +57,23 @@ class LoginForm extends StatelessWidget {
             // Footer Text
             Align(
               alignment: Alignment.topCenter,
-              child: RichText(
-                  text: TextSpan(
-                text: "Don't have an account?",
-                style: paragraph3,
-                children: <TextSpan>[
-                  TextSpan(
-                    text: "Sign up",
-                    style: paragraph1.copyWith(color: Colors.black),
-                  )
-                ],
-              )),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => LogoutActivity()));
+                },
+                child: RichText(
+                    text: TextSpan(
+                  text: "Don't have an account?",
+                  style: paragraph3,
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: "Sign up",
+                      style: paragraph1.copyWith(color: Colors.black),
+                    )
+                  ],
+                )),
+              ),
             ),
             SizedBox(height: 45)
           ],

@@ -11,10 +11,43 @@ class LogoutActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
+        child: Stack(
           children: [
-            Image.asset(AssetConstants.signupBackground),
-            LogoutForm(),
+            Container(
+              child: Image.asset(AssetConstants.signupBackground),
+            ),
+            Positioned(
+                child: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 50, left: 37, right: 26),
+                  child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                          borderRadius: BorderRadius.circular(30),
+                          // onTap: () => onback(context),
+                          child: const Icon(Icons.west, color: Colors.white))),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(top: 50, left: 65),
+                  child: Text("Welcome",
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                          color: Colors.white)),
+                ),
+              ],
+            )),
+            Positioned(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 400),
+                    child: LogoutForm(),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
