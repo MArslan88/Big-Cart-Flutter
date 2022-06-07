@@ -1,4 +1,5 @@
 import 'package:big_cart/constants/asset_constants.dart';
+import 'package:big_cart/screens/login/login_activity.dart';
 import 'package:big_cart/screens/login/login_form.dart';
 import 'package:big_cart/screens/signup/logout_form.dart';
 import 'package:big_cart/shared/styles.dart';
@@ -26,7 +27,12 @@ class LogoutActivity extends StatelessWidget {
                       child: InkWell(
                           borderRadius: BorderRadius.circular(30),
                           // onTap: () => onback(context),
-                          child: const Icon(Icons.west, color: Colors.white))),
+                          child: GestureDetector(
+                              onTap: () {
+                                Navigator.pop(
+                                    context); // return to previous screen
+                              },
+                              child: Icon(Icons.west, color: Colors.white)))),
                 ),
                 const Padding(
                   padding: EdgeInsets.only(top: 50, left: 65),
